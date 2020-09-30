@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <p>{{ fn1() }}</p>
+
+        <button @click='fn1' value="">anniu</button>
+    </div>
+    
+    <script src="./vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                msg: 'asdsad'
+            },
+            //methods: 写方法
+            //1、可以在视图中通过{{}}调用方法
+            //2、可以通过vm对象.方法名去调用
+            //3、方法中是this指的是当前Vue实例对象
+            //注意： 可以写箭头函数，但不推荐，因为this指向不是vm实例
+            //4、可以通过指令调用方法
+            //
+            methods:{
+                fn1:function(){
+                    console.log('fn1======');
+                },
+                fn2:function(){
+                    console.log('fn2======'+this);
+                    console.log(this);
+                },
+                fn3:function(){
+                    console.log(this.msg);
+                    console.log(this);
+                },
+                fun4:()=>{
+                    console.log('fn4======'+this.msg)//undefined
+                },
+                fn5(){
+                    console.log('fn5-------')
+                    console.log('fn5======'+this.msg)//可以获取
+
+                }
+            }
+        })
+
+        vm.fn1();
+        vm.fn2();
+
+    </script>
+</body>
+</html>

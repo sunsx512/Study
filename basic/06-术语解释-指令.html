@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 指令 -->
+        <!-- 作用：增强了HTML的功能 -->
+        <!-- 
+            1、以v-开头，
+            2、位于开始标签，
+            3、用于取代之前的DOM操作
+         -->
+
+        <button v-on:click="fn1">按钮</button>
+    </div>
+    <script src="./vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                count: 100,
+                age: 15
+            },
+            methods: {
+                fn1() {
+                    console.log(this.count)
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

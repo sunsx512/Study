@@ -1,0 +1,52 @@
+vue基础-重点
+01-基础-vue是什么？
+	1.1、vue.js是前端js框架
+	1.2、库和框架的区别（方法是否需要自己调用）
+	
+02-基础-为什么学vue
+	2.1、传统技术栈无法解决复杂项目的业务逻辑
+	2.2、企业需求需要
+	2.3、vue最容易上手
+
+03-基础-vue能做什么
+	3.1、最大程度上解放了DOM操作，几乎没有（性能优化，大量DOM操作会影响性能）。
+	3.2、适合开发单页sap（SingleApplicationProject）项目，例如Worktile官网。
+	3.3、也可用于传统网站开发。
+	
+04-基础-核心特性
+	4.1、双向数据绑定
+		vue借鉴了react的虚拟DOM操作，借鉴了angular双向数据绑定。
+	4.2、通过 指令 扩展了HTML，通过 表达式 绑定数据到HTML。
+	4.3、解耦视图与数据。
+	4.4、可复用组件。
+	4.5、虚拟DOM。
+	4.6、M-V-VM。
+	4.7、数据驱动视图。
+
+05-基础-一些链接
+	5.1、vue官网
+		https://cn.vuejs.org/
+	5.2、各种插件、项目案例、工具
+		https://github.com/opendigg/awesome-github-vue
+	5.3、中文社区
+		https://vue-js.com/?tab=good
+	
+06-基础-vue的三种安装方式
+	6.1、本地文件
+	6.2、cdn引入
+	6.3、npm i vue
+
+07-基础-HelloWord
+	见01-HelloWorld.html
+
+08-基础-实例选项-el
+	见02-实例选项-el.html
+
+09-基础-实例选项-data
+	见03-实例选项-data.html
+
+10-基础-实例选项-methods
+	见04-实例选项-methods.html
+
+11-基础-术语解释-插值表达式
+	见05-术语解释-插值表达式.html
