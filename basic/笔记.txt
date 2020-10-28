@@ -10,7 +10,7 @@ vue基础-重点
 
 03-基础-vue能做什么
 	3.1、最大程度上解放了DOM操作，几乎没有（性能优化，大量DOM操作会影响性能）。
-	3.2、适合开发单页sap（SingleApplicationProject）项目，例如Worktile官网。
+	3.2、适合开发单页sap（SinglePageApplication）项目，例如Worktile官网。
 	3.3、也可用于传统网站开发。
 	
 04-基础-核心特性
